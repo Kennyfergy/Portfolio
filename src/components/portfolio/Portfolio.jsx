@@ -11,15 +11,15 @@ const items = [
   },
   {
     id: 2,
-    title: "",
-    img: "",
-    desc: "",
+    title: "React Feedback Loop",
+    img: "./public/feedback loop.png",
+    desc: "This is a feedback input form with several pages of inputs, build with React, Redux, and Javascript",
   },
   {
     id: 3,
-    title: "",
-    img: "",
-    desc: "",
+    title: "Movies Saga",
+    img: "public/moviesSaga.png",
+    desc: "The Movies Web Application provides a platform for exploring and interacting with a wide array of movies. A user can view the list of movies, and click on the list for further details",
   },
   {
     id: 4,
