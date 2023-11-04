@@ -1,0 +1,96 @@
+import { useRef } from "react";
+import "./portfolio.scss";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+
+const items = [
+  {
+    id: 1,
+    title: "Golf Handi-Calc",
+    img: "./public/home-page.png",
+    desc: "This is a golf handicap calculating app I made for a 2 week sprint project at Emerging Digital Academy. Users can input rounds and courses and the handicap, course handicap, and differentials are all calculated and clearly displayed to the user",
+  },
+  {
+    id: 2,
+    title: "",
+    img: "",
+    desc: "",
+  },
+  {
+    id: 3,
+    title: "",
+    img: "",
+    desc: "",
+  },
+  {
+    id: 4,
+    title: ".Net Pet Hotel",
+    img: "./public/PetsTableUpdated.png",
+    desc: "This was a .Net and C# project with 2 other people to practice backend .Net.",
+  },
+];
+
+const Single = ({ item }) => {
+  const ref = useRef();
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+  });
+
+  const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
+
+  // Style object for the iframe
+  // const iframeStyle = {
+  //   position: "absolute",
+  //   top: "0",
+  //   left: "0",
+  //   width: "45%",
+  //   height: "45%",
+  //   paddingLeft: "50px",
+  // };
+
+  return (
+    <section>
+      <div className="container">
+        <div className="wrapper">
+          <div className="imageContainer" ref={ref}>
+            <img src={item.img} alt="" />
+          </div>
+
+          <motion.div className="textContainer" style={{ y }}>
+            <h2>{item.title}</h2>
+            <p>{item.desc}</p>
+            <button>See Demo</button>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const Portfolio = () => {
+  const ref = useRef();
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["end end", "start start"],
+  });
+
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+  });
+
+  return (
+    <div className="portfolio" ref={ref}>
+      <div className="progress">
+        <h1>Featured Works</h1>
+        <motion.div style={{ scaleX }} className="progressBar"></motion.div>
+      </div>
+      {items.map((item) => (
+        <Single item={item} key={item.id} />
+      ))}
+    </div>
+  );
+};
+
+export default Portfolio;
