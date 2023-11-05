@@ -74,24 +74,32 @@ const Services = () => {
           className="infoBox"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2 className="infoTitle">About Me</h2>
-          <p className="infoContent">
-            Growing up I always had a curiosity about learning how things
-            worked. I joined the Air Force after high school and moved into a
-            career in power generation. Learning how electricity, engines, and
-            controls worked fueled my curiosity. My years in the Air Force have
-            taught me importance of teamwork, effective communication,
-            leadership, and relentless dedication to achieving success on a
-            daily basis. My passion for understanding complex systems extends
-            seamlessly into my present role as a software developer, where I am
-            currently engaged in ongoing education at Emerging Digital Academy
-            in Fargo, ND. Each day, I embrace the opportunity to continuously
-            expand my knowledge of software engineering and gain insights of how
-            the various pieces come together in the complex puzzle of software
-            engineering. This curiosity extends into my personal life where I
-            enjoy reading books, building new ideas with my 3D printer, and
-            recently trying to figure out the complexities of golfing.
-          </p>
+          <div className="infoContent">
+            <p>
+              Growing up I always had a curiosity about learning how things
+              worked. I joined the Air Force after high school and moved into a
+              career in power generation. Learning how electricity, engines, and
+              controls worked fueled my curiosity.
+            </p>{" "}
+            <br />
+            <p>
+              My years in the Air Force have taught me importance of teamwork,
+              effective communication, leadership, and relentless dedication to
+              achieving success on a daily basis. My passion for understanding
+              complex systems extends seamlessly into my present role as a
+              software developer, where I am currently engaged in ongoing
+              education at Emerging Digital Academy in Fargo, ND.
+            </p>{" "}
+            <br />
+            <p>
+              Each day, I embrace the opportunity to continuously expand my
+              knowledge of software engineering and gain insights of how the
+              various pieces come together in the complex puzzle of software
+              engineering. This curiosity extends into my personal life where I
+              enjoy reading books, building new ideas with my 3D printer, and
+              recently trying to figure out the complexities of golfing.
+            </p>
+          </div>
         </motion.div>
         <motion.div
           className="box"
@@ -126,12 +134,12 @@ const Services = () => {
             />
             <br />
             Axios
-            <FontAwesomeIcon
+            {/* <FontAwesomeIcon
               icon={faBell}
               className="icon"
               title="SweetAlert2"
             />
-            Sweetalert2
+            Sweetalert2 */}
             <FontAwesomeIcon icon={faGit} className="icon" title="Git" />
             Git
             {/* <div>bcrypt.js</div>

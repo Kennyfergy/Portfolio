@@ -180,5 +180,28 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; // Use this to vertically center if needed
+}
+
+.infoContent {
+  font-size: 20px;
+  margin-bottom: 2rem;
+  text-align: left;
+  line-height: 1.6;
+  margin-top: 20px;
+  padding: 20px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.services {
+  animation: fadeIn 1s ease-out forwards;
+  padding: 2rem;
 }

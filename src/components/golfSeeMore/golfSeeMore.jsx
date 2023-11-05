@@ -2,7 +2,8 @@
   /* <div className="imageContainer" ref={ref}>
             {/* Check if item.video exists, if so, use iframe instead of img */
 }
-<div>
+{
+  /* <div>
   {item.video ? (
     <iframe
       src="https://player.vimeo.com/video/881219079?badge=0&autopause=0&quality_selector=1&player_id=0&app_id=58479"
@@ -13,4 +14,9 @@
   ) : (
     <img src={item.img} alt={item.title} />
   )}
-</div>;
+</div>; */
+}
+
+export default function golfSeeMore() {
+  return <div>Hello world</div>;
+}

@@ -6,26 +6,30 @@ const items = [
   {
     id: 1,
     title: "Golf Handi-Calc",
-    img: "./public/home-page.png",
+    img: "/home-page.png",
     desc: "This is a golf handicap calculating app I made for a 2 week sprint project at Emerging Digital Academy. Users can input rounds and courses and the handicap, course handicap, and differentials are all calculated and clearly displayed to the user",
+    githubUrl: "https://github.com/Kennyfergy/Golf-Handi-Calc",
   },
   {
     id: 2,
     title: "React Feedback Loop",
-    img: "./public/feedback loop.png",
+    img: "/feedback loop.png",
     desc: "This is a feedback input form with several pages of inputs, build with React, Redux, and Javascript",
+    githubUrl: "https://github.com/Kennyfergy/feedback-loop",
   },
   {
     id: 3,
     title: "Movies Saga",
-    img: "public/moviesSaga.png",
+    img: "/moviesSaga.png",
     desc: "The Movies Web Application provides a platform for exploring and interacting with a wide array of movies. A user can view the list of movies, and click on the list for further details",
+    githubUrl: "https://github.com/Kennyfergy/movie-sagas",
   },
   {
     id: 4,
     title: ".Net Pet Hotel",
-    img: "./public/PetsTableUpdated.png",
+    img: "/PetsTableUpdated.png",
     desc: "This was a .Net and C# project with 2 other people to practice backend .Net.",
+    githubUrl: "https://github.com/Kennyfergy/dotnet-pet-hotel",
   },
 ];
 
@@ -49,7 +53,9 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            <a href={item.githubUrl} target="_blank" rel="noopener noreferrer">
+              <button>View on GitHub</button>
+            </a>
           </motion.div>
         </div>
       </div>

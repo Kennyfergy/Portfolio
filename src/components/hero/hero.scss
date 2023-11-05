@@ -78,6 +78,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      z-index: 2;
     }
   }
 
@@ -86,9 +87,8 @@
     font-size: 50vh;
     bottom: -120px;
     white-space: nowrap;
-    color: #ffffff09;
+    color: #ffffff0d;
     width: 50%;
     font-weight: bold;
-    z-index: 1;
   }
 }
