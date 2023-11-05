@@ -156,22 +156,21 @@
 }
 .services {
   .icons {
-    display: flex; // Use flexbox to layout icons.
-    flex-wrap: wrap; // Allow icons to wrap to the next line.
-    justify-content: center; // Center the icons horizontally.
-    align-items: center; // Center the icons vertically.
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
-    // Set a minimum size for your icons
     .icon {
-      flex: 1; // Allows icons to grow and take up equal space.
-      min-width: 50px; // Minimum width of each icon.
-      max-width: 120px; // Maximum width of each icon.
-      margin: 10px; // Space between icons.
-      font-size: 4vw; // Responsive size based on viewport width.
+      flex: 1;
+      min-width: 50px;
+      max-width: 120px;
+      margin: 10px;
+      font-size: 4vw;
 
       // Adjust size for smaller screens
       @media (max-width: 768px) {
-        font-size: 6vw; // Increase size on smaller screens
+        font-size: 6vw;
       }
     }
   }

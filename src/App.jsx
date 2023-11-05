@@ -7,10 +7,12 @@ import Navbar from "./components/navbar/Navbar";
 import Parallax from "./components/parallax/Parallax";
 import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/Services";
+import Sidebar from "./components/sidebar/Sidebar";
 
 const App = () => {
   return (
     <div>
+      <Sidebar />
       <Cursor />
       <section id="Homepage">
         <Navbar />
