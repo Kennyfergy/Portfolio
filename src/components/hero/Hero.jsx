@@ -37,7 +37,19 @@ const sliderVariants = {
   },
 };
 
+// Scroll to the projects section
+const scrollToProjects = () => {
+  console.log("Button clicked");
+  const projectsSection = document.getElementById("Portfolio");
+  if (projectsSection) {
+    projectsSection.scrollIntoView({ behavior: "smooth" });
+  } else {
+    console.error('No element with ID "Portfolio" found.');
+  }
+};
+
 const Hero = () => {
+  console.log("Hero component rendered");
   return (
     <div className="hero">
       <div className="wrapper">
@@ -50,9 +62,16 @@ const Hero = () => {
           <motion.h2 variants={textVariants}>KENNY FERGUSON</motion.h2>
           <motion.h1 variants={textVariants}>Software Developer</motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
+            <motion.button
+              variants={textVariants}
+              whileHover={{ scale: 1.1 }}
+              onClick={() => console.log("CLICK")}
+            >
               See My Latest Projects
             </motion.button>
+            <button onClick={() => console.log("CLICK")}>
+              See My Latest Projects
+            </button>
             <motion.button variants={textVariants}>Contact Me</motion.button>
           </motion.div>
           <motion.img

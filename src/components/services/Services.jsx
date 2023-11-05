@@ -44,10 +44,10 @@ const Services = () => {
       className="services"
       variants={variants}
       initial="initial"
-      // animate="animate"
-      // whileInView="animate"
+      animate="animate"
+      whileInView="animate"
       ref={ref}
-      animate={"animate"}
+      //animate={"animate"}
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
@@ -58,7 +58,7 @@ const Services = () => {
       </motion.div>
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
-          <img src="/sotftdevimg copy.png" alt="" />
+          {/* <img src="/sotftdevimg copy.png" alt="" /> */}
           <h1>
             <motion.b whileHover={{ color: "orange" }}>About Me</motion.b> and
           </h1>
@@ -74,8 +74,8 @@ const Services = () => {
           className="infoBox"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>About Me</h2>
-          <p>
+          <h2 className="infoTitle">About Me</h2>
+          <p className="infoContent">
             Growing up I always had a curiosity about learning how things
             worked. I joined the Air Force after high school and moved into a
             career in power generation. Learning how electricity, engines, and

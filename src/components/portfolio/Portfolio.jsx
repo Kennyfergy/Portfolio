@@ -38,16 +38,6 @@ const Single = ({ item }) => {
 
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
-  // Style object for the iframe
-  // const iframeStyle = {
-  //   position: "absolute",
-  //   top: "0",
-  //   left: "0",
-  //   width: "45%",
-  //   height: "45%",
-  //   paddingLeft: "50px",
-  // };
-
   return (
     <section>
       <div className="container">
