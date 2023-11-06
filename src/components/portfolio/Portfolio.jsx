@@ -79,7 +79,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio" ref={ref}>
       <div className="progress">
-        <h1>A Few of my projects</h1>
+        <h1>A Few of My Projects</h1>
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
       {items.map((item) => (
