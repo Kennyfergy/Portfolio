@@ -31,12 +31,8 @@ const Contact = () => {
 
     emailjs
 
-      .sendForm(
-        "service_8t1y0q5",
-        "template_1ezq0lc",
-        formRef.current,
-        "KU3wtegoJw9kODXXG"
-      )
+      .sendForm("service_8t1y0q5", "template_1ezq0lc", formRef.current, "KU3wtegoJw9kODXXG")
+      //unused code
       // emailjs
       //   .send("service_8t1y0q5", "template_1ezq0lc", "KU3wtegoJw9kODXXG", {
       //     name: "test",
@@ -54,22 +50,14 @@ const Contact = () => {
   };
 
   return (
-    <motion.div
-      ref={ref}
-      className="contact"
-      variants={variants}
-      initial="initial"
-      whileInView="animate"
-    >
+    <motion.div ref={ref} className="contact" variants={variants} initial="initial" whileInView="animate">
       <motion.div className="textContainer" variants={variants}>
         <motion.h1 variants={variants}>Let’s work together</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Mail</h2>
 
           <span>
-            <a href="mailto:kenneth.w.ferguson2@gmail.com">
-              kenneth.w.ferguson2@gmail.com
-            </a>
+            <a href="mailto:kenneth.w.ferguson2@gmail.com">kenneth.w.ferguson2@gmail.com</a>
           </span>
         </motion.div>
         <motion.div className="item" variants={variants}>
